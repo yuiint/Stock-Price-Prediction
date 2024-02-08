@@ -26,7 +26,6 @@ def get_X_y(df, term_type):
     documents = df['cut_title_content_term'].to_list()
     vectorizer = TfidfVectorizer(vocabulary=term_type, use_idf=True)
 
-    # Fit and transform the documents
     X = vectorizer.fit_transform(documents)
     y = df['type']
 
@@ -39,8 +38,6 @@ def predict(X, y, model_name: str, classifier):
     classifier: classifier for the model
     '''
     X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
-
-    # fit
     classifier.fit(X_train, y_train)
     y_pred= classifier.predict(X_test.toarray())
 
@@ -61,6 +58,7 @@ def predict(X, y, model_name: str, classifier):
         print(scores)
         print(f"Avg. Accuracy: {round(scores.mean(), 4)}")
         print('='*50)
+
     # Plot Confusion Matrix
     # Create a 1x1 subplot
     fig = make_subplots(rows=1, cols=1)
@@ -102,7 +100,6 @@ def prediction_result(X, y):
     nb_classifier = MultinomialNB()
     knn_classifier = KNeighborsClassifier(n_neighbors=5)
     svm_classifier = SVC(kernel='linear')
-
 
     scenarios = [
     ('RF', rf_classifier),
