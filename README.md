@@ -2,7 +2,7 @@
 
 ### Overview
 
-This project aims to predict stock price movements based on the sentiment derived from financial news and forum discussions. By leveraging the power of natural language processing (NLP), specifically the term frequency-inverse document frequency (tf-idf) method, we extract relevant keywords that indicate Bullish (positive) or Bearish (negative) sentiment.
+This project aims to predict stock price movements based on the sentiment derived from financial news and forum discussions. By leveraging the power of NLP, specifically the term frequency-inverse document frequency (tf-idf) method, we extract relevant keywords that indicate Bullish (positive) or Bearish (negative) sentiment.
 
 ### Methodology
 
