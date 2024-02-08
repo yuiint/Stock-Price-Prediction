@@ -1,0 +1,8 @@
+ckiptagger==0.2.1
+monpa==0.3.3
+numpy==1.26.2
+pandas==2.2.0
+plotly==5.18.0
+scikit-learn==1.3.2
+tqdm==4.66.1
+xgboost==2.0.1
