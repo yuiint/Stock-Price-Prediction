@@ -12,7 +12,7 @@ The core of our approach involves constructing a term set through tf-idf to abst
 
 We utilize these text-derived features to predict whether a stock's price will rise or fall. Our models have demonstrated remarkable proficiency, accurately capturing market trends with an 85% accuracy rate.
 
-###Conclusion
+### Conclusion
 
 The high accuracy rate underscores the efficacy of using tf-idf for keyword abstraction in financial sentiment analysis and its potency in predicting stock market movements.
 
